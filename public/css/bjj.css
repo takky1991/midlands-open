@@ -1,0 +1,311 @@
+.bjj-header {
+    margin: 0;
+    z-index: 9999;
+    height: 80px;
+    border-radius: 0;
+    border: none;
+    background-color: rgba(154, 0, 0, 0.8);
+}
+
+nav.navbar-default.bjj-header .bjj-header-link {
+    color: #fff;
+    font-size: 20px;
+}
+
+.bjj-header.navbar-default .navbar-nav>.active>a,
+.bjj-header.navbar-default .navbar-nav>.active>a:focus,
+.bjj-header.navbar-default .navbar-nav>.active>a:hover {
+    background-color: transparent;
+    font-weight: bold;
+    color: #e3be5a;
+}
+
+.bjj-header .navbar-header {
+    height: 65px;
+}
+
+.bjj-header .navbar-brand img {
+    height: 50px;
+    width: 50px;
+}
+
+.bjj-header.navbar-default .navbar-collapse {
+    margin-top: 15px;
+    border: none;
+    background-color: rgb(126, 3, 3);
+    ;
+}
+
+.bjj-header.navbar-default .navbar-toggle {
+    margin-top: 20px;
+    background-color: #9a0000;
+    border-color: #fff;
+}
+
+.bjj-header.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.bjj-about-page {
+    color: #fff;
+    background-color: rgba(154, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px solid #d3e0e9;
+}
+
+.bjj-about-page p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.bjj-register-page h4{
+    color: #fff;
+}
+
+.bjj-register-page label {
+    color: #fff;
+    font-size: 16px;
+}
+
+.bjj-register-page form {
+    background-color: rgba(125, 2, 2, 0.5);
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px solid rgb(211, 224, 233);
+}
+
+.bjj-register-page button {
+    color: #fff;
+    font-size: 20px;
+    background-color: #9a0000;
+    outline: none;
+    border: none;
+}
+
+.bjj-register-page button:hover,
+.bjj-register-page button:visited,
+.bjj-register-page button:focus,
+.bjj-register-page button:active {
+    background-color: #fff;
+    color: #9a0000;
+}
+
+.bjj-register-page input,
+.bjj-register-page select {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.bjj-register-page input:focus,
+.bjj-register-page select:focus {
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(154, 0, 0, 0.86);
+}
+
+.bjj-register-page h5,
+.bjj-register-page ul li.bjj-price-row{
+    color: #fff;
+}
+
+.bjj-events-page {
+    color: #fff;
+}
+
+.bjj-events-page .bjj-logo{
+    width: 100px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.bjj-events-page .bjj-competitors-title {
+    margin-top: 30px;
+}
+
+.bjj-events-page .bjj-register-button {
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    color: #7c0102;
+    cursor: pointer;
+}
+
+.bjj-events-page table {
+    font-size: 15px;
+}
+
+.bjj-events-page .bjj-list-group {
+    background-color: rgba(154, 0, 0, 0.5);
+}
+
+.bjj-rules-page {
+    color: #fff;
+    font-size: 15px;
+}
+
+.bjj-rules-page .panel-default {
+    background-color: transparent;
+}
+
+.bjj-rules-page .panel-heading {
+    background-color: rgba(124, 1, 1, 0.8);
+}
+
+.bjj-rules-page .panel-heading .panel-title {
+    color: #fff;
+}
+
+.bjj-rules-page .panel-body {
+    background-color: rgba(124, 1, 1, 0.5);
+}
+
+.bjj-payment-page h4{
+    color: #fff;
+    text-align: left;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bjj-payment-page h5,
+.bjj-payment-page ul li{
+    color: #fff;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bjj-payment-page .bjj-stripe-logo{
+    margin-left: auto;
+    margin-right: auto;
+    width: 220px;
+    display: block;
+    padding: 20px;
+}
+
+.bjj-payment-page .bjj-logo{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    display: block;
+}
+
+.bjj-payment-page .bjj-credit-card-logos{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.bjj-payment-page .bjj-payment-errors{
+    color: #fff;
+}
+
+.bjj-payment-page label{
+    color: #fff;
+    font-size: 16px;
+}
+
+.bjj-payment-page form {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(125, 2, 2, 0.5);
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px solid rgb(211, 224, 233);
+}
+
+.bjj-payment-page button {
+    color: #fff;
+    font-size: 20px;
+    background-color: #9a0000;
+    outline: none;
+    border: none;
+}
+
+.bjj-payment-page button:hover,
+.bjj-payment-page button:visited,
+.bjj-payment-page button:focus,
+.bjj-payment-page button:active {
+    background-color: #fff;
+    color: #9a0000;
+}
+
+.bjj-payment-page input,
+.bjj-payment-page select {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.bjj-payment-page input:focus,
+.bjj-payment-page select:focus {
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(154, 0, 0, 0.86);
+}
+
+.bjj-payment-page .bjj-expiry{
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+}
+
+.bjj-location-page{
+    color: #fff;
+    background-color: rgba(154, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px solid #d3e0e9;
+}
+
+.bjj-location-page p{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.bjj-contact-page {
+    color: #fff;
+    background-color: rgba(154, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px solid #d3e0e9;
+}
+
+.bjj-contact-page button {
+    color: #fff;
+    font-size: 20px;
+    background-color: #9a0000;
+    outline: none;
+    border: none;
+}
+
+.bjj-contact-page button:hover,
+.bjj-contact-page button:visited,
+.bjj-contact-page button:focus,
+.bjj-contact-page button:active {
+    background-color: #fff;
+    color: #9a0000;
+}
+
+
+.bjj-terms-conditions-page{
+    color: #fff;
+    background-color: rgba(154, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px solid #d3e0e9;
+}
+
+.bjj-terms-conditions-page p{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.bjj-gallery-page h2{
+    color: #fff;
+}
+
+@media (max-width: 760px){
+    .bjj-payment-page button{
+        font-size: 18px;
+    }
+}

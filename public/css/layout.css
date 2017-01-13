@@ -1,0 +1,91 @@
+/* Grow */
+
+.hvr-grow {
+    display: block;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.bjj-body {
+    min-height: 100vh;
+    background-color: #000000;
+    font-family: 'Lato', sans-serif;
+    background-image: url('../images/background1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.mma-body {
+    min-height: 100vh;
+    background-color: #000000;
+    font-family: 'Lato', sans-serif;
+    background-image: url('../images/background1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.bjj-wrapper,
+.mma-wrapper {
+    width: 90%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.max-width {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.bjj-footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100px;
+}
+
+.bjj-footer .bjj-footer-icons i {
+    color: #fff;
+    margin: 5px;
+}
+
+.mma-footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100px;
+}
+
+.mma-footer .mma-footer-icons i {
+    color: #e3be5a;
+    margin: 5px;
+}
+
+.bjj-footer-icons,
+.mma-footer-icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    /* IE 9 */
+    -webkit-transform: translate(-50%, -50%);
+    /* Safari */
+    transform: translate(-50%, -50%);
+}

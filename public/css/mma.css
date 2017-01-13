@@ -1,0 +1,343 @@
+.mma-header {
+    margin: 0;
+    z-index: 9999;
+    height: 80px;
+    border-radius: 0;
+    border: none;
+    background-color: #191919;
+}
+
+nav.navbar-default.mma-header .mma-header-link {
+    color: #fff;
+    font-size: 20px;
+}
+
+.mma-header.navbar-default .navbar-nav>.active>a,
+.mma-header.navbar-default .navbar-nav>.active>a:focus,
+.mma-header.navbar-default .navbar-nav>.active>a:hover {
+    background-color: transparent;
+    font-weight: bold;
+    color: #e3be5a;
+}
+
+.mma-header .navbar-header {
+    height: 65px;
+}
+
+.mma-header .navbar-brand img {
+    height: 50px;
+    width: 50px;
+}
+
+.mma-header.navbar-default .navbar-collapse {
+    margin-top: 15px;
+    border: none;
+    background-color: #191919;
+    ;
+}
+
+.mma-header.navbar-default .navbar-toggle {
+    margin-top: 20px;
+    background-color: #191919;
+    border-color: #e3be5a;
+}
+
+.mma-header.navbar-default .navbar-toggle .icon-bar {
+    background-color: #e3be5a;
+}
+
+.mma-about-page {
+    color: #e3be5a;
+    background-color: rgba(25, 25, 25, 0.5);
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px solid rgb(211, 224, 233);
+}
+
+.mma-about-page p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.mma-rules-page {
+    color: #e3be5a;
+    font-size: 15px;
+}
+
+.mma-rules-page .panel-default {
+    background-color: transparent;
+}
+
+.mma-rules-page .panel-heading {
+    background-color: rgba(25, 25, 25, 0.8);
+}
+
+.mma-rules-page .panel-heading .panel-title {
+    color: #e3be5a;
+}
+
+.mma-rules-page .panel-body {
+    background-color: rgba(25, 25, 25, 0.5);
+}
+
+.mma-events-page {
+    color: #e3be5a;
+}
+
+.mma-events-page .mma-logo{
+    width: 100px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.mma-events-page .mma-competitors-title {
+    margin-top: 30px;
+}
+
+.mma-events-page .mma-register-button {
+    background-color: #e3be5a;
+    padding: 8px;
+    border-radius: 4px;
+    color: #191919;
+    cursor: pointer;
+}
+
+.mma-events-page table {
+    font-size: 15px;
+}
+
+.mma-events-page .mma-list-group {
+    background-color: rgba(25, 25, 25, 0.5);
+}
+
+.mma-register-page h4{
+    color: #e3be5a;
+}
+
+.mma-register-page h5,
+.mma-register-page ul li.mma-price-row{
+    color: #e3be5a;
+}
+
+.mma-register-page label {
+    color: #e3be5a;
+    font-size: 16px;
+}
+
+.mma-register-page form {
+    background-color: rgba(25, 25, 25, 0.5);
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px solid rgb(211, 224, 233);
+}
+
+.mma-register-page button {
+    color: #191919;
+    font-size: 20px;
+    background-color: #e3be5a;
+    outline: none;
+    border: none;
+}
+
+.mma-register-page button:hover,
+.mma-register-page button:visited,
+.mma-register-page button:focus,
+.mma-register-page button:active {
+    background-color: #191919;
+    color: #e3be5a;
+}
+
+.mma-register-page input,
+.mma-register-page select {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.mma-register-page input:focus,
+.mma-register-page select:focus {
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(25, 25, 25, 0.86);
+}
+
+.mma-payment-page h4{
+    color: #e3be5a;
+    text-align: left;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mma-payment-page h5,
+.mma-payment-page ul li{
+    color: #e3be5a;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mma-payment-page .mma-stripe-logo{
+    margin-left: auto;
+    margin-right: auto;
+    width: 220px;
+    display: block;
+    padding: 20px;
+}
+
+.mma-payment-page .mma-logo{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    display: block;
+}
+
+.mma-payment-page .mma-credit-card-logos{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.mma-payment-page .mma-payment-errors{
+    color: #e3be5a;
+}
+
+.mma-payment-page label{
+    color: #e3be5a;
+    font-size: 16px;
+}
+
+.mma-payment-page form {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(25, 25, 25, 0.5);
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px solid rgb(211, 224, 233);
+}
+
+.mma-payment-page button {
+    color: #fff;
+    font-size: 20px;
+    background-color: #e3be5a;
+    outline: none;
+    border: none;
+}
+
+.mma-payment-page button:hover,
+.mma-payment-page button:visited,
+.mma-payment-page button:focus,
+.mma-payment-page button:active {
+    background-color: #191919;
+    color: #e3be5a;
+}
+
+.mma-payment-page input,
+.mma-payment-page select {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.mma-payment-page input:focus,
+.mma-payment-page select:focus {
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(25, 25, 25, 0.86);
+}
+
+.mma-payment-page .mma-expiry{
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+}
+
+.mma-location-page{
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px solid #d3e0e9;
+}
+
+.mma-location-page p{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.mma-contact-page {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px solid #d3e0e9;
+}
+
+.mma-contact-page button {
+    color: #fff;
+    font-size: 20px;
+    background-color: #e3be5a;
+    outline: none;
+    border: none;
+}
+
+.mma-contact-page button:hover,
+.mma-contact-page button:visited,
+.mma-contact-page button:focus,
+.mma-contact-page button:active {
+    background-color: #191919;
+    color: #e3be5a;
+}
+
+
+.mma-terms-conditions-page{
+    color: #e3be5a;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px solid #d3e0e9;
+}
+
+.mma-terms-conditions-page p{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.mma-gallery-page h2{
+    color: #e3be5a;
+}
+
+.mma-coming-soon{
+    background-image: url('../images/background1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.mma-coming-soon .mma-container{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    /* IE 9 */
+    -webkit-transform: translate(-50%, -50%);
+    /* Safari */
+    transform: translate(-50%, -50%);
+}
+
+.mma-coming-soon img{
+    display: block;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 760px){
+    .mma-payment-page button{
+        font-size: 18px;
+    }
+}
