@@ -11,6 +11,24 @@
 |
 */
 
+Route::group(['middleware' => 'guest'], function () {
+    // Authentication Routes...
+    Route::get('/login', 'Auth\LoginController@showLoginForm')->name('login');
+    Route::post('/login', 'Auth\LoginController@login');
+    Route::post('/logout', 'Auth\LoginController@logout')->name('logout');
+
+   /* // Registration Routes...
+    Route::get('register', 'Auth\RegisterController@showRegistrationForm')->name('register');
+    Route::post('register', 'Auth\RegisterController@register');
+
+    // Password Reset Routes...
+    Route::get('password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm');
+    Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail');
+    Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm');
+    Route::post('password/reset', 'Auth\ResetPasswordController@reset');*/
+});
+
+
 Route::get('/', function () {
     return view('welcome');
 })->name('homepage');
@@ -42,3 +60,5 @@ Route::get('/bjj/contact', 'BjjController@showContact')->name('bjj_contact');
 Route::post('/bjj/contact', 'BjjController@sendContactFormEmail')->name('bjj_contact_form_send');
 Route::get('/bjj/terms-conditions', 'BjjController@showTermsConditions')->name('bjj_terms_conditions');
 Route::get('/bjj/gallery', 'BjjController@showGallery')->name('bjj_gallery');
+
+Route::get('/home', 'HomeController@index');
