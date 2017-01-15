@@ -85,9 +85,9 @@
                         <div class="form-group">
                             <label for="level">Level</label>
                             <select class="form-control" id="level" name="level">
-                                <option value="Beginner" {{old('level') == 'Beginner' ? 'selected' : ''}}>Beginner</option>
-                                <option value="Intermediate" {{old('level') == 'Intermediate' ? 'selected' : ''}}>Intermediate</option>
-                                <option value="Advanced" {{old('level') == 'Advanced' ? 'selected' : ''}}>Advanced</option>
+                                <option value="Beginner - 1 year" {{old('level') == 'Beginner - 1 year' ? 'selected' : ''}}>Beginner - 1 year</option>
+                                <option value="Intermediate 2 years" {{old('level') == 'Intermediate 2 years' ? 'selected' : ''}}>Intermediate 2 years</option>
+                                <option value="Intermediate 2 years plus" {{old('level') == 'Intermediate 2 years plus' ? 'selected' : ''}}>Intermediate 2 years plus</option>
                             </select>
                         </div>
                     </div>

@@ -55,9 +55,9 @@
             </div>
             <div class="panel-body">
                 <ul>
-                    <li>Novice (less than 1.5 years training)</li>
-                    <li>Intermediate (less than 2.5 years training)</li>
-                    <li>Advanced (less than 4 years training)</li>
+                    <li>Beginner - 1 year</li>
+                    <li>Intermediate - 2 years</li>
+                    <li>Intermediate - 2 years plus</li>
                 </ul>
                 <p> If you have ever competed on an amateur show or have been training for more than four years please <a href="{{route('mma_contact')}}">contact us</a> to discuss whether this competition is suitable for you.</p>
             </div>

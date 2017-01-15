@@ -15,7 +15,7 @@
                 </a>
             </div>
             <div class="col-xs-12 col-sm-6 logo-responsive">
-                <a href="{{route('mma_coming_soon')}}">
+                <a href="{{route('mma_index')}}">
                     <img src="{{asset('/images/mma_logo.png')}}" alt="" class="homepage-logo hvr-grow">
                 </a>
             </div>
