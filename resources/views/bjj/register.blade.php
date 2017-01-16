@@ -12,12 +12,12 @@
             <h5>For Adults and Seniors</h5>
             <ul>
                 <li class="bjj-price-row">Early registration fee: €30</li>
-                <li class="bjj-price-row">Late registration fee (10 days before event start): €40</li>
+                <li class="bjj-price-row">Late registration fee: €40</li>
             </ul>
             <h5>For Teens</h5>
             <ul>
                 <li class="bjj-price-row">Early registration fee: €20</li>
-                <li class="bjj-price-row">Late registration fee (10 days before event start): €25</li>
+                <li class="bjj-price-row">Late registration fee: €25</li>
             </ul>
             <br>
             <h5>Registration will close 48 hours before event start, unless capacity is reached before.</h5>

@@ -12,12 +12,12 @@
             <h5>For Adults and Masters</h5>
             <ul>
                 <li class="mma-price-row">Early registration fee: €40</li>
-                <li class="mma-price-row">Late registration fee (10 days before event start): €50</li>
+                <li class="mma-price-row">Late registration fee: €50</li>
             </ul>
             <h5>For Teens</h5>
             <ul>
                 <li class="mma-price-row">Early registration fee: €25</li>
-                <li class="mma-price-row">Late registration fee (10 days before event start): €30</li>
+                <li class="mma-price-row">Late registration fee: €30</li>
             </ul>
             <br>
             <h5>Registration will close 48 hours before event start, unless capacity is reached before.</h5>
@@ -86,8 +86,8 @@
                             <label for="level">Level</label>
                             <select class="form-control" id="level" name="level">
                                 <option value="Beginner - 1 year" {{old('level') == 'Beginner - 1 year' ? 'selected' : ''}}>Beginner - 1 year</option>
-                                <option value="Intermediate 2 years" {{old('level') == 'Intermediate 2 years' ? 'selected' : ''}}>Intermediate 2 years</option>
-                                <option value="Intermediate 2 years plus" {{old('level') == 'Intermediate 2 years plus' ? 'selected' : ''}}>Intermediate 2 years plus</option>
+                                <option value="Intermediate - 2 years" {{old('level') == 'Intermediate - 2 years' ? 'selected' : ''}}>Intermediate - 2 years</option>
+                                <option value="Advanced +2 years" {{old('level') == 'Advanced +2 years' ? 'selected' : ''}}>Advanced +2 years</option>
                             </select>
                         </div>
                     </div>
