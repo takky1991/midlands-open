@@ -1,5 +1,9 @@
 @extends('layouts.mma')
 
+@section('description')
+    <meta name="Description" content="The Midlands Open MMA League is here to provide fighters the opportunity to safely gain competition experience in Ireland - Mixed martial arts (MMA)">
+@endsection
+
 @section('container')
 
     <div class="mma-about-page">

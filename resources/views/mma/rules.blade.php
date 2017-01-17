@@ -59,7 +59,7 @@
                     <li>Intermediate - 2 years</li>
                     <li>Advanced +2 years</li>
                 </ul>
-                <p> If you have ever competed on an amateur show or have been training for more than four years please <a href="{{route('mma_contact')}}">contact us</a> to discuss whether this competition is suitable for you.</p>
+                <p>If you have ever competed on an amateur show or have trained in any martial art for more than four years please <a href="{{route('mma_contact')}}">contact us</a> to discuss whether this competition is suitable for you.</p>
             </div>
         </div>
 

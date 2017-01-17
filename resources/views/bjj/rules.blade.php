@@ -91,7 +91,7 @@
                         <li>Early registration fee: €30</li>
                         <li>Late registration fee: €40</li>
                     </ul>
-                    <li>Master 35 + (Same as Adults)</li>
+                    <li>Master 35 +</li>
                     <ul>
                         <li>Pricing is the same as for Adults</li>
                     </ul>

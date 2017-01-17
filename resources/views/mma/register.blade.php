@@ -63,7 +63,7 @@
                             <select class="form-control" id="age_group" name="age_group">
                                 <option value="Teen" {{old('age_group') == 'Teen' ? 'selected' : ''}}>Teen</option>
                                 <option value="Adult" {{old('age_group') == 'Adult' ? 'selected' : ''}}>Adult</option>
-                                <option value="Senior" {{old('age_group') == 'Senior' ? 'selected' : ''}}>Senior</option>
+                                <option value="Master" {{old('age_group') == 'Master' ? 'selected' : ''}}>Master</option>
                             </select>
                         </div>
                         <div class="form-group {{$errors->has('date_of_birth') ? 'has-error' : ''}}">
