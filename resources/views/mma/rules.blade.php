@@ -26,7 +26,7 @@
                 <ul>
                     <li>Rash Guard (No t-shirts)</li>
                     <li>Bordshorts or Vale Tudo shorts (not below the knee)</li>
-                    <li>8oz MMA Gloves</li>
+                    <li>6-8 oz Gloves</li>
                     <li>Gumshield</li>
                     <li>Shin & instep pads</li>
                     <li>Groin Guard</li>
@@ -55,11 +55,11 @@
             </div>
             <div class="panel-body">
                 <ul>
-                    <li>Novice (less than 1.5 years training)</li>
-                    <li>Intermediate (less than 2.5 years training)</li>
-                    <li>Advanced (less than 4 years training)</li>
+                    <li>Beginner - 1 year</li>
+                    <li>Intermediate - 2 years</li>
+                    <li>Advanced +2 years</li>
                 </ul>
-                <p> If you have ever competed on an amateur show or have been training for more than four years please <a href="{{route('mma_contact')}}">contact us</a> to discuss whether this competition is suitable for you.</p>
+                <p>If you have ever competed on an amateur show or have trained in any martial art for more than four years please <a href="{{route('mma_contact')}}">contact us</a> to discuss whether this competition is suitable for you.</p>
             </div>
         </div>
 
@@ -109,12 +109,12 @@
                     <li>Teens 15 - 17</li>
                     <ul>
                         <li>Early registration fee: €25</li>
-                        <li>Late registration fee (10 days before event start): €30</li>
+                        <li>Late registration fee: €30</li>
                     </ul>
                     <li>Adult 18 - 34</li>
                         <ul>
                             <li>Early registration fee: €40</li>
-                            <li>Late registration fee (10 days before event start): €50</li>
+                            <li>Late registration fee: €50</li>
                         </ul>
                     <li>Master 35 +</li>
                     <ul>

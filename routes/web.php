@@ -33,9 +33,9 @@ Route::get('/', function () {
     return view('welcome');
 })->name('homepage');
 
-Route::get('/coming-soon', 'MmaController@showComingSoon')->name('mma_coming_soon');
+/*Route::get('/coming-soon', 'MmaController@showComingSoon')->name('mma_coming_soon');*/
 
-/*Route::get('/mma', 'MmaController@index')->name('mma_index');
+Route::get('/mma', 'MmaController@index')->name('mma_index');
 Route::get('/mma/about', 'MmaController@showAbout')->name('mma_about');
 Route::get('/mma/register', 'MmaController@showRegister')->name('mma_register');
 Route::post('/mma/register', 'MmaController@registerSubmit')->name('mma_submit_registration_form');
@@ -46,7 +46,7 @@ Route::get('/mma/location', 'MmaController@showLocation')->name('mma_location');
 Route::get('/mma/contact', 'MmaController@showContact')->name('mma_contact');
 Route::post('/mma/contact', 'MmaController@sendContactFormEmail')->name('mma_contact_form_send');
 Route::get('/mma/terms-conditions', 'MmaController@showTermsConditions')->name('mma_terms_conditions');
-Route::get('/mma/gallery', 'MmaController@showGallery')->name('mma_gallery');*/
+Route::get('/mma/gallery', 'MmaController@showGallery')->name('mma_gallery');
 
 Route::get('/bjj', 'BjjController@index')->name('bjj_index');
 Route::get('/bjj/about', 'BjjController@showAbout')->name('bjj_about');

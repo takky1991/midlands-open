@@ -1,5 +1,9 @@
 @extends('layouts.bjj')
 
+@section('description')
+    <meta name="Description" content="The Midlands Open is a No-Gi Submission Only Competition - Brazilian jiu-jitsu (BJJ)">
+@endsection
+
 @section('container')
 
     <div class="bjj-about-page">

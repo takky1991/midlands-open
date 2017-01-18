@@ -84,14 +84,14 @@
                     <li>Teens 15 - 17</li>
                     <ul>
                         <li>Early registration fee: €20</li>
-                        <li>Late registration fee (10 days before event start): €25</li>
+                        <li>Late registration fee: €25</li>
                     </ul>
                     <li>Adult 18 - 34</li>
                     <ul>
                         <li>Early registration fee: €30</li>
-                        <li>Late registration fee (10 days before event start): €40</li>
+                        <li>Late registration fee: €40</li>
                     </ul>
-                    <li>Master 35 + (Same as Adults)</li>
+                    <li>Master 35 +</li>
                     <ul>
                         <li>Pricing is the same as for Adults</li>
                     </ul>

@@ -9,6 +9,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
+    <meta name="Description" content="The Midlands Open is a No-Gi Submission Only Competition - Brazilian jiu-jitsu (BJJ) & Mixed martial arts (MMA)">
 
     <!-- Styles -->
     <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet" type="text/css">

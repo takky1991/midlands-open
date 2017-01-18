@@ -12,12 +12,12 @@
             <h5>For Adults and Masters</h5>
             <ul>
                 <li class="mma-price-row">Early registration fee: €40</li>
-                <li class="mma-price-row">Late registration fee (10 days before event start): €50</li>
+                <li class="mma-price-row">Late registration fee: €50</li>
             </ul>
             <h5>For Teens</h5>
             <ul>
                 <li class="mma-price-row">Early registration fee: €25</li>
-                <li class="mma-price-row">Late registration fee (10 days before event start): €30</li>
+                <li class="mma-price-row">Late registration fee: €30</li>
             </ul>
             <br>
             <h5>Registration will close 48 hours before event start, unless capacity is reached before.</h5>
@@ -63,7 +63,7 @@
                             <select class="form-control" id="age_group" name="age_group">
                                 <option value="Teen" {{old('age_group') == 'Teen' ? 'selected' : ''}}>Teen</option>
                                 <option value="Adult" {{old('age_group') == 'Adult' ? 'selected' : ''}}>Adult</option>
-                                <option value="Senior" {{old('age_group') == 'Senior' ? 'selected' : ''}}>Senior</option>
+                                <option value="Master" {{old('age_group') == 'Master' ? 'selected' : ''}}>Master</option>
                             </select>
                         </div>
                         <div class="form-group {{$errors->has('date_of_birth') ? 'has-error' : ''}}">
@@ -85,9 +85,9 @@
                         <div class="form-group">
                             <label for="level">Level</label>
                             <select class="form-control" id="level" name="level">
-                                <option value="Beginner" {{old('level') == 'Beginner' ? 'selected' : ''}}>Beginner</option>
-                                <option value="Intermediate" {{old('level') == 'Intermediate' ? 'selected' : ''}}>Intermediate</option>
-                                <option value="Advanced" {{old('level') == 'Advanced' ? 'selected' : ''}}>Advanced</option>
+                                <option value="Beginner - 1 year" {{old('level') == 'Beginner - 1 year' ? 'selected' : ''}}>Beginner - 1 year</option>
+                                <option value="Intermediate - 2 years" {{old('level') == 'Intermediate - 2 years' ? 'selected' : ''}}>Intermediate - 2 years</option>
+                                <option value="Advanced +2 years" {{old('level') == 'Advanced +2 years' ? 'selected' : ''}}>Advanced +2 years</option>
                             </select>
                         </div>
                     </div>
