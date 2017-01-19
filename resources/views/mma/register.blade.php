@@ -95,6 +95,7 @@
                         <div class="form-group">
                             <label for="weight">Weight Category</label>
                             <select class="form-control" id="weight" name="weight_category">
+                                <option value="45kg" {{old('weight_category') == '45kg' ? 'selected' : ''}}>45kg</option>
                                 <option value="50kg" {{old('weight_category') == '50kg' ? 'selected' : ''}}>50kg</option>
                                 <option value="55kg" {{old('weight_category') == '55kg' ? 'selected' : ''}}>55kg</option>
                                 <option value="60kg" {{old('weight_category') == '60kg' ? 'selected' : ''}}>60kg</option>

@@ -85,6 +85,8 @@
                 <div class="col-sm-6">
                     <h5>FEMALE</h5>
                     <ul>   
+                        <li>-45kg Atom Weight</li>
+                        <li>-50kg Straw Weight</li>
                         <li>-55kg Fly Weight </li>
                         <li>-60kg Bantam Weight</li>
                         <li>-65kg Feather Weight</li>
