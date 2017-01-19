@@ -8,37 +8,38 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Midlands Open Backend</title>
 
-    @yield('description')
-    
     <!-- Styles -->
     <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet" type="text/css">
     <link href="{{asset('css/font-awesome.css')}}" rel="stylesheet" type="text/css">
     <link href="{{asset('css/app.css')}}" rel="stylesheet">
-    <link href="{{asset('css/layout.css')}}" rel="stylesheet" type="text/css">
-    <link href="{{asset('css/homepage.css')}}" rel="stylesheet" type="text/css">
     <link href="{{asset('css/bootstrap-datetimepicker.css')}}" rel="stylesheet" type="text/css">
-    <link href="{{asset('css/bjj.css')}}" rel="stylesheet" type="text/css">
-    <link href="{{asset('css/mma.css')}}" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="{{asset('css/backend.css')}}" rel="stylesheet">
+    <link href="{{asset('css/simple-sidebar.css')}}" rel="stylesheet">
 
     <!-- Scripts -->
-    
-    <script type="text/javascript" src="{{asset('/js/jquery-3.1.1.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/jquery-3.1.1.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('/js/moment.js')}}"></script>
-    <script type="text/javascript" src="{{asset('/js/bootstrap.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/bootstrap.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('/js/transition.js')}}"></script>
     <script type="text/javascript" src="{{asset('/js/collapse.js')}}"></script>
     <script type="text/javascript" src="{{asset('/js/bootstrap-datetimepicker.js')}}"></script>
-   
+    <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+
+    <!-- Scripts -->
     <script>
         window.Laravel = <?php echo json_encode([
             'csrfToken' => csrf_token(),
         ]); ?>
     </script>
 </head>
-<body class="{{Request::is('bjj/*') ? 'bjj-body' : '' }} {{Request::is('mma/*') ? 'mma-body' : '' }}">
+<body>
     <div id="app">
         @yield('content')
     </div>
