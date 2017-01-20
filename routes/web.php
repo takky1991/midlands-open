@@ -32,7 +32,11 @@ Route::group(['middleware' => 'auth'], function () {
      Route::get('/home', 'Backend\BackendController@index')->name('backend.home');
 
      Route::resource('bjj-participants', 'Backend\BjjParticipantsController');
+     Route::resource('bjj-events', 'Backend\BjjEventsController');
+     Route::resource('bjj-results', 'Backend\BjjResultsController');
      Route::resource('mma-participants', 'Backend\MmaParticipantsController');
+     Route::resource('mma-events', 'Backend\MmaEventsController');
+     Route::resource('mma-results', 'Backend\MmaResultsController');
 
 });
 

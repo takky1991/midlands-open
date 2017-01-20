@@ -15,12 +15,12 @@
         </ul>
     </nav>
 
-    <h1>Edit MMA Participant: {{$participant->first_name}} {{$participant->last_name}}</h1>
+    <h1>Edit BJJ Participant: {{$participant->first_name}} {{$participant->last_name}}</h1>
 
     <hr>
 
     <div class="col-md-8 col-md-offset-2">
-        <form role="form" action="{{route('mma-participants.update', ['mma_participant' => $participant->id])}}" method="POST">
+        <form role="form" action="{{route('bjj-participants.update', ['bjj_participant' => $participant->id])}}" method="POST">
             {{csrf_field()}}
             <input type="hidden" name="_method" value="PUT">
             <div class="row">
@@ -46,15 +46,15 @@
                     <div class="form-group">
                         <label for="gender">Gender</label>
                         <select class="form-control" id="gender" name="gender">
-                            <option value="Male" {{$participant->gender == 'Male' ? 'selected' : ''}}>Male</option>
-                            <option value="Female" {{$participant->gender == 'Female' ? 'selected' : ''}}>Female</option>
+                            <option value="male" {{$participant->gender == 'male' ? 'selected' : ''}}>Male</option>
+                            <option value="female" {{$participant->gender == 'female' ? 'selected' : ''}}>Female</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="mma_event_id">Event</label>
-                        <select class="form-control" id="mma_event_id" name="mma_event_id">
-                                @foreach($events as $event)
-                                <option value="{{$event->id}}" {{$participant->mma_event->id == $event->id ? 'selected' : ''}}>{{$event->title}}</option>
+                        <label for="bjj_event_id">Event</label>
+                        <select class="form-control" id="bjj_event_id" name="bjj_event_id">
+                            @foreach($events as $event)
+                                <option value="{{$event->id}}" {{$participant->bjj_event->id == $event->id ? 'selected' : ''}}>{{$event->title}}</option>
                             @endforeach
                         </select>
                     </div>
@@ -83,11 +83,14 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="level">Level</label>
-                        <select class="form-control" id="level" name="level">
-                            <option value="Beginner - 1 year" {{$participant->level == 'Beginner - 1 year' ? 'selected' : ''}}>Beginner - 1 year</option>
-                            <option value="Intermediate - 2 years" {{$participant->level == 'Intermediate - 2 years' ? 'selected' : ''}}>Intermediate - 2 years</option>
-                            <option value="Advanced +2 years" {{$participant->level == 'Advanced +2 years' ? 'selected' : ''}}>Advanced +2 years</option>
+                        <label for="belt">Division</label>
+                        <select class="form-control" id="belt" name="belt">
+                            <option value="White less than 6 months" {{$participant->belt == 'White less than 6 months' ? 'selected' : ''}}>White less than 6 months</option>
+                            <option value="White" {{$participant->belt == 'White' ? 'selected' : ''}}>White</option>
+                            <option value="Blue" {{$participant->belt == 'Blue' ? 'selected' : ''}}>Blue</option>
+                            <option value="Purple" {{$participant->belt == 'Purple' ? 'selected' : ''}}>Purple</option>
+                            <option value="Brown" {{$participant->belt == 'Brown' ? 'selected' : ''}}>Brown</option>
+                            <option value="Black" {{$participant->belt == 'Black' ? 'selected' : ''}}>Black</option>
                         </select>
                     </div>
                 </div>
@@ -112,7 +115,7 @@
                         <input type="text" class="form-control" id="years_training" placeholder="Number of years training" name="years_training" value="{{$participant->years_training}}">
                         @if ($errors->has('years_training'))
                             <span class="help-block">
-                            <strong>{{ $errors->first('years_training') }}</strong>
+                                <strong>{{ $errors->first('years_training') }}</strong>
                             </span>
                         @endif
                     </div>

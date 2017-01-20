@@ -16,6 +16,8 @@
     </nav>
     <h1>New MMA Participant</h1>
 
+    <hr>
+
     <div class="col-md-8 col-md-offset-2">
         <form role="form" action="{{route('mma-participants.store')}}" method="POST">
             {{csrf_field()}}
@@ -50,7 +52,7 @@
                         <label for="mma_event_id">Event</label>
                         <select class="form-control" id="mma_event_id" name="mma_event_id">
                                 @foreach($events as $event)
-                                <option value="{{$event->id}}" {{old('mma_event_id') == 1 ? 'selected' : ''}}>{{$event->title}}</option>
+                                <option value="{{$event->id}}" {{old('mma_event_id') == $event->id ? 'selected' : ''}}>{{$event->title}}</option>
                             @endforeach
                         </select>
                     </div>

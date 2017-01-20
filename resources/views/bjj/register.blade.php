@@ -54,7 +54,7 @@
                             <label for="bjj_event_id">Event</label>
                             <select class="form-control" id="bjj_event_id" name="bjj_event_id">
                                 @foreach($events as $event)
-                                    <option value="{{$event->id}}" {{old('bjj_event_id') == 1 ? 'selected' : ''}}>{{$event->title}}</option>
+                                    <option value="{{$event->id}}" {{old('bjj_event_id') == $event->id ? 'selected' : ''}}>{{$event->title}}</option>
                                 @endforeach
                             </select>
                         </div>

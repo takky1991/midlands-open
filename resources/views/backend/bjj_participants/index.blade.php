@@ -16,9 +16,13 @@
     </nav>
 
     <h1>BJJ Participants</h1>
+    
+    <hr>
 
     <a href="{{route('bjj-participants.create')}}" class="btn btn-primary">Create Participant</a>
+
     <hr>
+    
     <!-- will be used to show any messages -->
     @if (Session::has('success'))
         <div class="alert alert-success">{{ Session::get('success') }}</div>
@@ -59,12 +63,11 @@
                 <td>{{ $value->instructor_name }}</td>
                 <td>{{ $value->phone_number }}</td>
                 <td style="text-align:center;">
-                    <a href="{{ URL::to('nerds/' . $value->id) }}">
+                    <a href="{{ URL::to('bjj-participants/' . $value->id . '/edit') }}">
                         <i class="fa fa-pencil edit-icon" aria-hidden="true"></i>
                     </a>
                     <a href="{{ URL::to('bjj-participants/' . $value->id) }}"
-                            onclick="event.preventDefault();
-							document.getElementById('delete-{{$value->id}}').submit();">
+                            onclick="confirmDelete()">
                         <i class="fa fa-trash delete-icon" aria-hidden="true"></i>
                     </a>
 					<form id="delete-{{$value->id}}" action="{{ URL::to('bjj-participants/' . $value->id ) }}" method="POST" style="display: none;">
@@ -73,6 +76,16 @@
 					</form>
                 </td>
             </tr>
+             <script>
+                function confirmDelete(){
+                    event.preventDefault();
+                    var r = confirm("You are about to delete a participant!");
+                    if (r == true) {
+                        x = "You pressed OK!";
+                        document.getElementById('delete-{{$value->id}}').submit();
+                    }
+                }
+            </script>
         @endforeach
         </tbody>
     </table>

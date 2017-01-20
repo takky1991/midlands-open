@@ -1,18 +1,13 @@
 @extends('layouts.sidebar')
 
 @section('container')
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Welcome to Midlands Open Dashboard</div>
-
-                    <div class="panel-body">
-                        You are logged in! {{Request::path()}}
-                    </div>
-
-                </div>
-            </div>
+    <nav class="navbar navbar-inverse">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="javascript:void(0)" style="color:#fff;">Welcome to Midlands Open Dashboard</a>
         </div>
-    </div>
+    </nav>
+
+    <h1>Dashboard</h1>
+    
+    <hr>
 @endsection

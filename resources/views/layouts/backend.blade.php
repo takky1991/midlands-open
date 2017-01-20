@@ -25,12 +25,6 @@
     <script type="text/javascript" src="{{asset('/js/transition.js')}}"></script>
     <script type="text/javascript" src="{{asset('/js/collapse.js')}}"></script>
     <script type="text/javascript" src="{{asset('/js/bootstrap-datetimepicker.js')}}"></script>
-    <script>
-        $("#menu-toggle").click(function(e) {
-            e.preventDefault();
-            $("#wrapper").toggleClass("toggled");
-        });
-    </script>
 
     <!-- Scripts -->
     <script>
@@ -43,5 +37,11 @@
     <div id="app">
         @yield('content')
     </div>
+    <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
 </body>
 </html>
