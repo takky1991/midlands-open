@@ -37,10 +37,20 @@
         @foreach($pastEvents as $event)
             <div class="list-group">
                 <div class="list-group-item mma-list-group">
-                    <h3 class="list-group-item-heading">{{$event->title}}</h3>
-                    <h4><strong>Event start date:</strong> {{$event->event_start->format('l jS F Y')}}</h4>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-9">
+                            <h3 class="list-group-item-heading">{{$event->title}}</h3>
+                            <h4><strong>Event start date:</strong> {{$event->event_start->format('l jS F Y')}}</h4>
+                            <h5>{{$event->content}}</h5>
+                        </div>
+                        <div class="col-xs-12 col-sm-3">
+                            <img class="mma-logo" src="{{asset('images/mma_logo.png')}}" alt="">
+                        </div>
+                    </div>
                     <br>
-                    @include('mma.table')
+                    @foreach($event->results->groupBy('title') as $category)
+                        @include('mma.table', ['results' => $category->sortBy('place')])
+                    @endforeach
                 </div>
             </div>
         @endforeach

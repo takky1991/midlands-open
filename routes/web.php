@@ -11,6 +11,36 @@
 |
 */
 
+Route::group(['middleware' => 'guest'], function () {
+    // Authentication Routes...
+    Route::get('/login', 'Auth\LoginController@showLoginForm')->name('login');
+    Route::post('/login', 'Auth\LoginController@login');
+
+    // Registration Routes...
+    /*Route::get('register', 'Auth\RegisterController@showRegistrationForm')->name('register');
+    Route::post('register', 'Auth\RegisterController@register');
+*/
+    // Password Reset Routes...
+    Route::get('password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm');
+    Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail');
+    Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm');
+    Route::post('password/reset', 'Auth\ResetPasswordController@reset');
+});
+
+Route::group(['middleware' => 'auth'], function () {
+     Route::post('/logout', 'Auth\LoginController@logout')->name('logout');
+     Route::get('/home', 'Backend\BackendController@index')->name('backend.home');
+
+     Route::resource('bjj-participants', 'Backend\BjjParticipantsController');
+     Route::resource('bjj-events', 'Backend\BjjEventsController');
+     Route::resource('bjj-results', 'Backend\BjjResultsController');
+     Route::resource('mma-participants', 'Backend\MmaParticipantsController');
+     Route::resource('mma-events', 'Backend\MmaEventsController');
+     Route::resource('mma-results', 'Backend\MmaResultsController');
+
+});
+
+
 Route::get('/', function () {
     return view('welcome');
 })->name('homepage');

@@ -2,25 +2,17 @@
     <table class="table">
         <thead>
             <tr>
-                <th colspan="3"></th>
+                <th colspan="3">{{$results[0]->title}}</th>
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <th scope="row">1st</th>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <th scope="row">2nd</th>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <th scope="row">3rd</th>
-                <td></td>
-                <td></td>
-            </tr>
+            @foreach($results as $result)
+                <tr>
+                    <th scope="row">{{ $result->place }}</th>
+                    <td>{{ $result->name_and_surname }}</td>
+                    <td>{{ $result->club_name }}</td>
+                </tr>
+            @endforeach
         </tbody>
     </table>
 </div>

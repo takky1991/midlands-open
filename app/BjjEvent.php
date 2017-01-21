@@ -15,6 +15,11 @@ class BjjEvent extends Model
         return $this->hasMany('App\BjjParticipant');
     }
 
+    public function results()
+    {
+        return $this->hasMany('App\BjjEventResult');
+    }
+
     public function getFee($age_group){
         if($age_group == "Teen"){
             return Carbon::now()->diffInDays($this->event_start) <= 9 ? $this->teen_late_reg_fee : $this->teen_early_reg_fee;

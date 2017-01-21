@@ -1,0 +1,22 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+a,
+a:hover {
+    text-decoration: none
+}
+
+.login-header-width {
+    width: 1200px;
+}
+
+table .edit-icon {
+    font-size: 19px;
+    padding-right: 5px;
+}
+
+table .delete-icon {
+    font-size: 19px;
+    padding-left: 5px;
+}
