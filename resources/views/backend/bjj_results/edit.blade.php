@@ -33,7 +33,7 @@
                         </select>
                     </div>
                     <div class="form-group {{$errors->has('title') ? 'has-error' : ''}}">
-                        <label for="title">Title</label>
+                        <label for="title">Title of category</label>
                         <input type="text" class="form-control" id="title" name="title" placeholder="For example: 60kg Man" value="{{$result->title}}">
                         @if ($errors->has('title'))
                             <span class="help-block">
