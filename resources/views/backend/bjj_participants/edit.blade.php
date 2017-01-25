@@ -107,7 +107,7 @@
                             <option value="80kg" {{$participant->weight_category == '80kg' ? 'selected' : ''}}>80kg</option>
                             <option value="85kg" {{$participant->weight_category == '85kg' ? 'selected' : ''}}>85kg</option>
                             <option value="90kg" {{$participant->weight_category == '90kg' ? 'selected' : ''}}>90kg</option>
-                            <option value="90kg" {{$participant->weight_category == '90kg' ? 'selected' : ''}}>90+kg</option>
+                            <option value="90+kg" {{$participant->weight_category == '90+kg' ? 'selected' : ''}}>90+kg</option>
                         </select>
                     </div>
                     <div class="form-group {{$errors->has('years_training') ? 'has-error' : ''}}">
