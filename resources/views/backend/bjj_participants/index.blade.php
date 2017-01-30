@@ -67,7 +67,7 @@
                         <i class="fa fa-pencil edit-icon" aria-hidden="true"></i>
                     </a>
                     <a href="{{ URL::to('bjj-participants/' . $value->id) }}"
-                            onclick="confirmDelete()">
+                            onclick="{{'confirmDelete' . $value->id . '()'}}">
                         <i class="fa fa-trash delete-icon" aria-hidden="true"></i>
                     </a>
 					<form id="delete-{{$value->id}}" action="{{ URL::to('bjj-participants/' . $value->id ) }}" method="POST" style="display: none;">
@@ -77,7 +77,7 @@
                 </td>
             </tr>
              <script>
-                function confirmDelete(){
+                function {{'confirmDelete' . $value->id . '()'}}{
                     event.preventDefault();
                     var r = confirm("You are about to delete a participant!");
                     if (r == true) {
